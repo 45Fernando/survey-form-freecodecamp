@@ -1,0 +1,20 @@
+body {
+  background: url(https://vectorified.com/image/burger-pattern-vector-34.jpg);
+}
+
+main {
+  background: #b6db76;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#title{
+  text-align: center;
+}
+
+#description {
+  font-size: large;
+  text-align: center;
+}

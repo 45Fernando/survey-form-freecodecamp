@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+  <main id="main" class="container">
+    <h1 id="title">Encuesta sobre Hamburguesas</h1>
+    <p id="description">Gracias por tomar el tiempo de llenar la encuesta, nos ayuda en nuestro negocio</p>
+    
+    <form id="survey-form">
+      <div class="form-group">
+       <label for="name" id="name-label">Nombre:</label>
+       <input type="text" id="name" placeholder="Ingrese su nombre" required class="form-control">
+      </div>
+      
+      <div class="form-group">
+        <label for="email" id="email-label">Correo:</label>
+        <input type="email" id="email" placeholder="Ingrese su correo" required class="form-control">
+      </div>  
+        
+      <div class="form-group">        
+        <label for="number" id="number-label">Edad:</label>
+        <input type="number" id="number" min="18" max="100" placeholder="Ingrese su edad" required class="form-control">
+      </div>
+      
+      <div class="form-group"> 
+        <label for="dropdown">Tipo de hamburguesa</label>
+        <select id="dropdown" class="form-control" required>
+          <option disable selected value>Elegir una opcion</option>
+          <option value="carne">Carne</option>
+          <option value="pollo">Pollo</option>
+          <option value="vegetariana">Vegetariana</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <p>Tamaño de hamburguesa:</p>  
+        
+        <div class="form-check">                
+          <input id="simple" class="form-check-input" type="radio" name="simple-doble" value="simple">
+          <label for="simple" class="form-check-label">Simple</label>
+        </div> 
+
+        <div class="form-check">        
+          <input id="doble" class="form-check-input" type="radio" name="simple-doble" value="doble">
+          <label for="doble" class="form-check-label">Doble</label>
+        </div> 
+      </div>
+      
+      <div class="form-group">
+        <p>Tipos de Quesos:</p>
+        <div class="form-check form-check-inline">        
+          <input id="cheddar" type="checkbox" name="queso" class="form-check-input" value="cheddar">
+          <label for="cheddar" class="form-check-label">Cheddar</label>
+        </div>
+        
+        <div class="form-check form-check-inline"> 
+          <input id="tybo" type="checkbox" name="queso" class="form-check-input" value="tybo"> 
+          <label for="tybo" class="form-check-label">Tybo</label>
+        </div>
+
+        <div class="form-check form-check-inline"> 
+          <input id="roquefort" type="checkbox" name="queso" class="form-check-input" value="roquefort">
+          <label for="roquefort" class="form-check-label">Roquefort</label>
+        </div>
+      </div>
+      
+     <div class="form-group">
+      <label for="area">Comentarios adicionales:</label>
+      <textarea class="form-control" id="area" rows="3"></textarea>
+     </div>
+      
+     <button class="btn btn-primary" type="submit" id="submit">Enviar</button>
+    </form>
+  </main>
+  
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>  
+</body>
+
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
